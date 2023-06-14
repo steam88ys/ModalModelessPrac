@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace ModalModelessPrac31
+namespace ModalModelessPrac
 {
     public partial class Form1 : Form
     {
-
         class CustomForm : Form
         {
             public CustomForm()
@@ -19,11 +18,10 @@ namespace ModalModelessPrac31
                 this.Text = "제목 글자";
             }
         }
-
         public Form1()
         {
             InitializeComponent();
-            // IsMdiContainer = true;
+            //IsMdiContainer = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,12 +39,17 @@ namespace ModalModelessPrac31
                     MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             CustomForm form = new CustomForm();
-            // form.MdiParent = this;
+            //form.MdiParent = this;
             form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.ShowDialog();
         }
     }
 }

@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModalModelessPrac", "ModalModelessPrac\ModalModelessPrac.csproj", "{158278EA-DA9D-4FC0-A6A8-138795DF30A8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{722CE345-F8C6-473F-9CB8-50B9F454D1BB}"
+	ProjectSection(SolutionItems) = preProject
+		Form2.cs = Form2.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
